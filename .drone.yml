@@ -5,6 +5,7 @@ name: build-and-push
 data:
   build:
     containerRepo: livspace/convoy
+    dockerfile: release.Dockerfile
     needIAMCreds: false
     disableCache: false
     slackChannel:
