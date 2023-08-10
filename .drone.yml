@@ -1,0 +1,14 @@
+---
+kind: template
+load: container_v1.yaml
+name: build-and-push
+data:
+  build:
+    containerRepo: livspace/convoy
+    needIAMCreds: false
+    disableCache: false
+    slackChannel:
+  promote:
+    deploymentRepo: catalog-deployments
+    appName: convoy
+    slackChannel:
